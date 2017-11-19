@@ -26,5 +26,15 @@ namespace FirstMVCApps.Controllers
 
             return View();
         }
+
+        public ActionResult Register()
+        {
+            UserInfo user = null;
+            using (dbRegisterEntities objectEntities = new dbRegisterEntities())
+            {
+                
+            }
+            return View(user);
+        }
     }
 }
